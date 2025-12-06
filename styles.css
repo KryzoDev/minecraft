@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #2e2f42;
+}
+
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  padding: 24px 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #4d5ae5;
+}
+
+.logo span {
+  color: #2e2f42;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.contacts {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts a {
+  color: #434455;
+  text-decoration: none;
+}
+
+
+.hero {
+  background-color: #2e2f42;
+  padding: 188px 0;
+  text-align: center;
+}
+
+.hero-title {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  width: 540px;
+  margin: 0 auto 40px;
+}
+
+.hero-btn {
+  padding: 16px 32px;
+  background-color: #4d5ae5;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.features {
+  padding: 120px 0;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.feature-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.feature-text {
+  color: #434455;
+}
+
+
+.projects {
+  padding-bottom: 120px;
+}
+
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.projects-list {
+  display: flex;
+  gap: 24px;
+}
+
+
+.team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 4px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.team-name {
+  font-size: 20px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.team-role {
+  color: #434455;
+}
+
+/* --- FOOTER --- */
+.footer {
+  background-color: #2e2f42;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.footer-logo {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer-text {
+  width: 264px;
+  margin-top: 16px;
+  color: #e7e9fc;
+}
