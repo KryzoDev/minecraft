@@ -1,0 +1,40 @@
+.portfolio {
+  padding: 40px 0;
+}
+
+.filter-list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.filter-list button.active {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.portfolio-card img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+.portfolio-card h3 {
+  margin: 10px 0 0;
+  font-weight: 600;
+}
+
+.portfolio-card p {
+  margin: 5px 0 0;
+  color: gray;
+}
