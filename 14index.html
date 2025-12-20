@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS практика </title>
+  <style>
+  
+    h1 {
+      color: green;
+    }
+
+ /
+    li {
+      color: tomato;
+    }
+
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+ */
+    .title {
+      font-weight: bold;
+      font-size: 32px;
+    }
+
+   
+    #hero {
+      background-color: black;
+      color: white;
+      padding: 10px;
+    }
+
+  
+    h1, h2, h3 {
+      color: green;
+    }
+
+  
+    .footer a {
+      color: gray;
+    }
+
+  
+    .menu > li {
+      border: 1px solid black;
+    }
+
+    h2 + p {
+      color: green;
+    }
+
+ 
+    .alert ~ p {
+      color: red;
+    }
+
+   
+    input[type="email"] {
+      border: 2px solid orange;
+    }
+
+  
+    a[href^="https://"] {
+      color: green;
+    }
+
+    .alert { padding: 10px; color: white; margin: 5px 0; }
+    .success { background-color: green; }
+    .warning { background-color: orange; }
+    .error { background-color: red; }
+
+
+    .rgb-text {
+      color: rgb(220, 20, 60);
+    }
+
+ 
+    .hex-box {
+      background-color: #ffdd00;
+      padding: 10px;
+    }
+
+
+    .overlay {
+      background-color: rgba(0,0,0,0.4);
+      color: white;
+      padding: 10px;
+    }
+
+
+    :root {
+      --brand-color: #3f51b5;
+      --accent: red;
+    }
+    h3 { color: var(--brand-color); }
+
+ 
+    .card {
+      --border-color: blue;
+      border: 2px solid var(--border-color);
+      padding: 10px;
+    }
+
+
+    button {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      margin: 5px;
+    }
+    .dark-theme { --accent: #ffa500; }
+  </style>
+</head>
+<body>
+
+
+  <p style="color: blue; font-size: 20px;">Інлайновий абзац</p>
+
+  <h1>H1 Заголовок</h1>
+
+  <h2 class="title">H2 Заголовок</h2>
+  <p>Абзац після H2 (зелений)</p>
+
+  <div id="hero">Hero секція (чорний фон, білий текст)</div>
+
+  <h3>H3 з CSS-змінною</h3>
+
+  <ul class="menu">
+    <li>Головний пункт
+      <ul>
+        <li>Підпункт</li>
+      </ul>
+    </li>
+    <li>Головний пункт</li>
+  </ul>
+
+  <div class="footer">
+    <a href="#">Посилання у футері</a>
+  </div>
+
+  <div class="alert success">Успіх</div>
+  <div class="alert warning">Попередження</div>
+  <div class="alert error">Помилка</div>
+
+  <p>Текст після alert (червоний)</p>
+
+  <input type="email" placeholder="Email">
+
+  <p class="rgb-text">RGB текст (малиновий)</p>
+
+  <div class="hex-box">HEX блок (#ffdd00)</div>
+
+  <div class="overlay">RGBA фон (чорний 40% прозорість)</div>
+
+  <div class="card">Картка (локальна змінна border-color)</div>
+
+  <a href="https://google.com">HTTPS посилання</a>
+
+  <br><br>
+
+  <button>Звичайна кнопка</button>
+
+  <div class="dark-theme">
+    <button>Кнопка темної теми</button>
+  </div>
+
+</body>
+</html>
