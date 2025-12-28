@@ -1,24 +1,65 @@
-
-.text-box h3:first-of-type {
-    color: pink;
+/* Контейнер */
+.container {
+    display: flex;
+    gap: 15px;
+    font-family: Arial, sans-serif;
 }
 
-
-#greycol {
-    color: grey;
+/* Списки */
+.day {
+    list-style: none;
+    padding: 10px;
+    border: 2px solid #333;
+    width: 150px;
 }
 
-
-.text-box div p {
-    color: red;
+/* Заголовок дня */
+.title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
+/* ===== ПСЕВДОКЛАСИ СТАНУ (5) ===== */
 
-.text-box > p:nth-of-type(2) {
-    color: green;
+li:hover {
+    background-color: lightblue;
 }
 
+li:active {
+    background-color: orange;
+}
 
-.yellow {
-    color: yellow;
+li:first-child:focus {
+    outline: 2px solid red;
+}
+
+.day:hover {
+    background-color: #f0f0f0;
+}
+
+li:visited {
+    color: purple;
+}
+
+/* ===== СТРУКТУРНІ ПСЕВДОКЛАСИ (5) ===== */
+
+li:first-child {
+    color: darkblue;
+}
+
+li:last-child {
+    color: darkgreen;
+}
+
+li:nth-child(2) {
+    color: brown;
+}
+
+li:nth-child(even) {
+    background-color: #eee;
+}
+
+li:not(.title) {
+    cursor: pointer;
 }

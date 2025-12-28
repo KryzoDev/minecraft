@@ -11,125 +11,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Minimal Blog — Homework</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#e9e9e9;
-      --paper:#ffffff;
-      --muted:#9b9b9b;
-      --accent:#f5f5f5;
-      --max-width:760px;
-    }
 
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background:var(--bg);
-      color:#222;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-    }
 
-    /* Центруючий контейнер */
-    .site {
-      max-width:var(--max-width);
-      margin:40px auto;
-      background:var(--paper);
-      padding:48px 56px;
-      box-shadow:0 0 0 1px rgba(0,0,0,0.03);
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 
-    /* Навігація */
-    header {
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      margin-bottom:36px;
-    }
-    .logo{
-      font-family: 'Playfair Display', serif;
-      font-size:20px;
-      letter-spacing:1px;
-      color:#2b2b2b;
-    }
-    nav a{
-      color:var(--muted);
-      text-decoration:none;
-      margin-left:18px;
-      font-size:13px;
-    }
 
-    /* Сітка статей */
-    .grid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:40px 36px;
-    }
-
-    .card img{
-      width:100%;
-      height:160px;
-      object-fit:cover;
-      display:block;
-      filter:grayscale(70%) contrast(95%);
-      border-radius:2px;
-      background:#ddd;
-    }
-
-    .meta{
-      font-size:11px;
-      color:var(--muted);
-      text-transform:uppercase;
-      letter-spacing:1.2px;
-      margin-top:12px;
-    }
-
-    .title{
-      font-family: 'Playfair Display', serif;
-      font-size:20px;
-      margin:8px 0 10px 0;
-      color:#2a2a2a;
-    }
-
-    .excerpt{
-      font-size:13px;
-      color:#6f6f6f;
-      line-height:1.45;
-    }
-
-    /* Нижній button */
-    .more-wrap{
-      display:flex;
-      justify-content:center;
-      margin-top:40px;
-    }
-    .more{
-      border:1px solid #d4d4d4;
-      background:transparent;
-      padding:10px 22px;
-      font-size:13px;
-      cursor:pointer;
-      border-radius:2px;
-      color:#666;
-    }
-
-    /* Відступи для мобайлу */
-    @media (max-width:720px){
-      .site{ padding:28px 20px; margin:20px auto; }
-      .grid{ grid-template-columns: 1fr; gap:28px; }
-      .card img{ height:200px; }
-    }
-
-    /* дрібні стилі для загальної естетики */
-    .divider{
-      height:1px;
-      background:linear-gradient(90deg, transparent, rgba(0,0,0,0.03), transparent);
-      margin:28px 0 22px 0;
-    }
-
-  </style>
+  <link href="3slyles.css" rel="stylesheet"/>
 </head>
+
+
 <body>
 
   <div class="site">
@@ -144,7 +34,7 @@
     </header>
 
     <div class="grid">
-      <!-- Карточка 1 -->
+      
       <article class="card">
         <img src="https://cdn.prod.website-files.com/5f0451cff072bf93693cd008/6671889b1cf01e9a86be0f3e_JustPark_Music_Festival_2024_Main_Image.jpg" alt="image 1">
         <div class="meta">Lifestyle</div>
@@ -154,7 +44,7 @@
         </p>
       </article>
 
-      <!-- Карточка 2 -->
+      
       <article class="card">
         <img src="https://i.pinimg.com/736x/50/62/a1/5062a1fcf17b8562fa1136877d98d365.jpg" alt="image 2">
         <div class="meta">Lifestyle</div>
@@ -164,7 +54,7 @@
         </p>
       </article>
 
-      <!-- Карточка 3 -->
+      
       <article class="card">
         <img src="https://m.media-amazon.com/images/S/pv-target-images/11dfa21e7df3a989391774a67eae48225e1bfafe0a0d5931946af170b009793b.jpg" alt="image 3">
 
@@ -178,7 +68,7 @@
         </p>
       </article>
 
-      <!-- Карточка 4 -->
+      
       <article class="card">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtHEZrJ9Vwf1GKeYhWDdDqD3sie7uUcaPsGg&s" alt="image 4">
         <div class="meta">Photography</div>
@@ -188,7 +78,7 @@
         </p>
       </article>
 
-      <!-- Карточка 5 -->
+      
       <article class="card">
         <img src="https://hips.hearstapps.com/hmg-prod/images/766/the-fast-af-running-playlist-1501177233.jpg" alt="image 5">
         <div class="meta">Lifestyle</div>
@@ -197,7 +87,7 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
       </article>
 
-      <!-- Карточка 6 -->
+      
       <article class="card">
         <img src="https://www.shutterstock.com/image-photo/toy-teddy-bear-sits-on-600nw-2158118289.jpg" alt="image 6">
         <div class="meta">Lifestyle</div>
