@@ -1,11 +1,15 @@
-/* ====== RESET ====== */
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ====== BASE ====== */
+
+
+
 body {
   font-family: 'Source Sans 3', sans-serif;
   background-color: #fafafa;
@@ -19,7 +23,7 @@ body {
   padding: 20px;
 }
 
-/* ====== HEADER ====== */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -44,14 +48,14 @@ nav a:hover {
   color: #000;
 }
 
-/* ====== GRID ====== */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
 }
 
-/* ====== CARD ====== */
+
 .card {
   background: #fff;
   border-radius: 8px;
@@ -71,7 +75,7 @@ nav a:hover {
   object-fit: cover;
 }
 
-/* ====== TEXT ====== */
+
 .meta {
   font-size: 12px;
   text-transform: uppercase;
@@ -91,7 +95,7 @@ nav a:hover {
   margin: 0 20px 20px;
 }
 
-/* ====== LOAD MORE ====== */
+
 .more-wrap {
   text-align: center;
   margin: 50px 0;
@@ -111,7 +115,7 @@ nav a:hover {
   color: #fff;
 }
 
-/* ====== RESPONSIVE ====== */
+
 @media (max-width: 600px) {
   header {
     flex-direction: column;
