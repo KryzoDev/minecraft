@@ -1,0 +1,163 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #0b1d26 0%, #0b1d26 40%, #102b36 100%);
+    font-family: 'Jost', sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 40px 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+.hero {
+    height: 100vh;
+    position: relative;
+    background: url("9c12887c275a251d0966ae77b7e58d007b190a88.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(11,29,38,0.6), #0b1d26);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin-left: 8%;
+}
+
+.hero-content h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 72px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero-content p:first-child {
+    color: #fbd784;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.hero-content p:last-child {
+    margin-top: 30px;
+}
+
+
+
+.step {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+    padding: 150px 0;
+    position: relative;
+}
+
+
+.step:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+
+.step-number,
+.step-n1 {
+    position: absolute;
+    font-size: 200px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.05);
+    top: 20px;
+    left: -40px;
+    z-index: 0;
+}
+
+.step-text,
+.step-read {
+    max-width: 500px;
+    position: relative;
+    z-index: 2;
+}
+
+.step-text h2,
+.step-read h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.step-text p,
+.step-read p {
+    color: #c4c4c4;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.read,
+.read2,
+.read3 {
+    color: #fbd784;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.step-image img {
+    width: 420px;
+    height: 520px;
+    object-fit: cover;
+}
+
+
+
+
+

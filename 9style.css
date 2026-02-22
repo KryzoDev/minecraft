@@ -1,30 +1,33 @@
 .bg-box {
-  width: 800px;
-  height: 400px;
+  width: 100vw;
+  height: 100vh;
+  
 
   background:
-    /* лампочки зверху */
+    
     url("lamp-png-34914.jpg") repeat-x top center,
 
-    /* кружечки зліва */
+   
     url("58eb07b830eab15b56162788.png") repeat-y left center,
 
-    /* кружечки справа */
+    
     url("3F3F.webp") repeat-y right center,
 
-    /* трава знизу */
+    
     url("green-png-44873.jpg") repeat-x bottom center,
 
-    /* центральна картинка */
+    
     url("pole-zelen-trava-dom-derevya.webp") no-repeat center;
 
   background-size:
-    50px,        /* лампочки */
-    30px,        /* кружечки зліва */
-    30px,        /* кружечки справа */
-    120px,       /* трава */
-    400px 220px;
-    cover; 
+    50px,      
+    30px,        
+    30px,      
+    120px,      
+    400px 220px; 
+  
+   
 
     background-color: forestgreen;
 }
+

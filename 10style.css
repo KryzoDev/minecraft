@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+
+
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.post {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+
+    box-shadow: 7px 10px 24px 13px rgba(236,17,17,0.74),
+    7px 14px 24px 13px rgb(252,196,21),
+    7px 16px 24px 13px rgb(252,238,21),
+    7px 18px 24px 13px rgb(21,252,39),
+    7px 20px 24px 13px rgb(21,174,252),
+    7px 22px 24px 13px rgb(201,21,252);
+}
+
+
+
+
+
