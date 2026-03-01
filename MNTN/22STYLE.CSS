@@ -157,6 +157,27 @@ header {
     object-fit: cover;
 }
 
+footer {
+    padding: 120px 0;
+    background: #0b1d26;
+}
+
+.footer-logo .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #c4c4c4;
+    display: block;
+    margin-bottom: 10px;
+}
+
 
 
 
