@@ -1,85 +1,92 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-font-family:'Poppins',sans-serif;
-background:linear-gradient(180deg,#081423,#1d2f4a);
-color:white;
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #081423, #1d2f4a);
+  color: white;
 }
 
-.container{
-width:1100px;
-margin:auto;
+.container {
+  width: 1100px;
+  margin: auto;
 }
 
-
-
-header{
-background:#0b1a2b;
-padding:20px 0;
+header {
+  background: #0b1a2b;
+  padding: 20px 0;
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 152px;
 }
 
-.logo{
-font-family:'DM Serif Display',serif;
-font-size:28px;
-color:white;
-text-decoration:none;
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 60px;
+}
+.logo-img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
-nav ul{
-display:flex;
-list-style:none;
-gap:30px;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
 }
 
-nav a{
-text-decoration:none;
-color:white;
-font-size:16px;
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
 }
 
-
-
-.hero{
-background:url("snicers nike.jpg") center/cover no-repeat;
-padding:140px 0;
+.hero {
+  background: url("snicers nike.jpg") center/cover no-repeat;
+  padding: 140px 0;
 }
 
-.hero h1{
-font-family:'DM Serif Display',serif;
-font-size:72px;
+.hero h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 72px;
 }
 
-.hero h2{
-font-size:36px;
-margin:10px 0;
+.hero h2 {
+  font-size: 36px;
+  margin: 10px 0;
 }
 
-.hero p{
-max-width:450px;
-margin-bottom:25px;
+.hero p {
+  max-width: 450px;
+  margin-bottom: 25px;
 }
 
-.btn{
-background:linear-gradient(90deg,#9b5cff,#ff7ad9);
-border:none;
-padding:12px 30px;
-border-radius:20px;
-color:white;
-font-size:16px;
-cursor:pointer;
+.btn {
+  background: linear-gradient(90deg, #9b5cff, #ff7ad9);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
-
-
 
 .features{
 padding:80px 0;
@@ -112,34 +119,51 @@ font-size:24px;
 
 .reviews{
 padding:80px 0;
-background:url("flower.jpg") left bottom no-repeat;
+
+
+
+background:url("цветы 2 1.png") left bottom no-repeat;
 }
 
 .reviews h2{
 text-align:center;
 font-size:36px;
 margin-bottom:40px;
+
 }
 
 .review-cards{
 display:flex;
 justify-content:space-between;
+
 }
 
+
+
 .card{
-width:30%;
+width:255px;
+height: 292px;
 padding:25px;
-border-radius:15px;
-background:linear-gradient(180deg,#4bc6ff,#b56bff);
+gap:40px; 
+border-radius: 15px;
 color:white;
+}
+.card:nth-child(1){
+background:linear-gradient(180deg,#4bc6ff,#b56bff);
+box-shadow: 0 20px 40px rgba(79, 214, 255, 0.4),
+0 25px 60px rgba(66, 212, 255, 0.4);
 }
 
 .card:nth-child(2){
 background:linear-gradient(180deg,#ff7ad9,#9b5cff);
+box-shadow: 0 20px 40px rgba(159, 107, 255, 0.4),
+0 25px 60px rgba(159, 107, 255, 0.4);
 }
 
 .card:nth-child(3){
 background:linear-gradient(180deg,#ffb347,#ff5f6d);
+box-shadow: 0 25px 60px rgba(255, 140, 90, 0.4),
+0 20px 40px rgba(255, 120, 90, 0.4);
 }
 
 .card p{
@@ -168,69 +192,120 @@ margin-top:15px;
 
 
 
-.order{
-padding:80px 0;
-text-align:center;
-background:
-url("fon4.jpg")  center no-repeat,
 
-linear-gradient(180deg,#0c1a2b,#1b2f4a);
+
+.contacts {
+  padding: 90px 0;
+  text-align: center;
+  height: 600px;
+  top: 2074px;
+  background:
+    url("./fon4.jpg") center no-repeat,
+    linear-gradient(180deg, #0c1a2b, #1b2f4a);
 }
 
-label{
-    display:flex;
-    justify-content:center;
-    margin-top:20px;
+label {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.input-confirm {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+input {
+  width: 400px;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
 }
 
-input{
-    width:400px;
-    padding:12px;
-    border-radius:20px;
-    border:none;
-    margin:10px auto;
-    display:block;
+.email-class {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
-label button{
-    margin-left:10px;
-    padding:12px 20px;
-    border:none;
-    border-radius:20px;
-    background:white;
-    cursor:pointer;
+label button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
-button[type="submit"]{
-    display:block;
-    margin:20px auto;
+button[type="submit"] {
+  display: block;
+  margin: 20px auto;
 }
 
-
-
-footer{
-display:flex;
-justify-content:space-between;
-padding:40px 0;
-background:#0b1a2b;
-margin-top:60px;
+.footer {
+    background: linear-gradient(180deg,#0c1a2b,#1b2f4a);
+    color: white;
+    padding: 50px 80px;
 }
 
-footer p{
-margin:6px 0;
-font-size:14px;
+/* Верх футера */
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-footer a{
-color:white;
-text-decoration:none;
+.footer-left p {
+    margin: 8px 0;
+    font-size: 18px;
 }
 
-.foter-logo{
-text-align:center;
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
 }
 
-.foter-logo img{
-width:60px;
-margin-bottom:5px;
+.footer-right a {
+    color: #4da6ff;
+    text-decoration: underline;
+    margin: 6px 0;
+}
+
+/* Лінія */
+
+.footer hr {
+    margin: 30px 0;
+    border: none;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+}
+
+/* Низ футера */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Логотип */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 108px;
+}
+
+.footer-logo span {
+    font-size: 16px;
+    font-weight: bold;
 }
