@@ -82,12 +82,6 @@ footer .container {
 }
 
 
-@media (max-width: 768px) {
-
-  header {
-    flex-direction: column;
-    gap: 20px;
-  }
 
   nav ul {
     flex-direction: column;
@@ -97,4 +91,3 @@ footer .container {
   .grid {
     grid-template-columns: 1fr;
   }
-}
